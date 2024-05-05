@@ -4,14 +4,14 @@ const BackgroundVideo = () =>
 {
     return (
         <>
-            <video autoPlay muted loop className="w-full h-[100%] absolute object-cover -z-100">
+            <video autoPlay muted loop className="w-[100dvw] h-[100%] fixed object-cover -z-100 overflow-x-hidden">
 				<source src="/background/bg.mp4" type="video/mp4" />
 			</video>
         </>
     );
 }
 
-const Section_1_TextBox = () =>
+const Hero_Content_1 = () =>
 {
     return (
         <section className='relative w-full mt-[10%]'>
@@ -23,7 +23,10 @@ const Section_1_TextBox = () =>
                 <p className='text-lg font-normal px-12'>Become a donor or request for blood And help save lives</p>
                 <div className=' ml-40 mt-4'>
                     <a href=''>
-                        <button className='font-normal text-4xl p-4 border border-black rounded-xl duration-500 hover:bg-red-500 active:bg-red-900 '>
+                        <button className='font-normal text-4xl p-4 border 
+                        border-black rounded-xl duration-500 hover:bg-red-500 active:bg-red-900 
+                        hover:text-neutral-50 drop-shadow-md hover:drop-shadow-xl
+                        '>
                             Register
                         </button>
                     </a>
@@ -35,5 +38,5 @@ const Section_1_TextBox = () =>
 
 export {
     BackgroundVideo, 
-    Section_1_TextBox
-} ;
+    Hero_Content_1
+};
